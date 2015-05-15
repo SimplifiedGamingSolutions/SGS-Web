@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Home</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top navbar-custom">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -33,7 +33,20 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <font color="white">
+                <div id="footer-container">
+                    <ul class="col-md-4">
+                        <b>About Us</b>
+                        <li>@Html.ActionLink("About Us", "About", "Default")</li>
+                        <li>@Html.ActionLink("Contact Us", "Contact", "Default")</li>
+                    </ul>
+                    <ul class="col-md-4">
+                        <b>Help Us</b>
+                        <li>@Html.ActionLink("Contact Us", "Contact", "Default")</li>
+                    </ul>
+                </div>
+                <p>&copy; @DateTime.Now.Year - Simplified Gaming Solutions</p>
+            </font>
         </footer>
     </div>
 
