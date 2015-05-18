@@ -206,6 +206,7 @@
     <Content Include="Icon.png" />
     <Content Include="Resources\Dirt.png" />
     <Content Include="Resources\Grass.png" />
+    <Content Include="Resources\Payment.gif" />
     <Content Include="Resources\SGSLogo.png" />
     <Content Include="Resources\Stone.png" />
     <Content Include="Scripts\bootstrap.js" />
