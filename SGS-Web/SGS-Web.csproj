@@ -206,6 +206,7 @@
     <Content Include="Icon.png" />
     <Content Include="Resources\Dirt.png" />
     <Content Include="Resources\Grass.png" />
+    <Content Include="Resources\SGSLogo.png" />
     <Content Include="Resources\Stone.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -258,6 +259,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Default\Buy.cshtml" />
+    <Content Include="Views\Default\News.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

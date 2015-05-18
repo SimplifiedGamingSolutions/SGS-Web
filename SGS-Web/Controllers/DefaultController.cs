@@ -26,5 +26,19 @@ namespace SGS_Web.Controllers
 
             return View();
         }
+
+        public ActionResult Buy()
+        {
+            ViewBag.Message = "Start having fun with the click of a button!";
+
+            return View();
+        }
+
+        public ActionResult News()
+        {
+            ViewBag.Message = "Whats new:";
+
+            return View();
+        }
     }
 }

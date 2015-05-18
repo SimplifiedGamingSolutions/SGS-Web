@@ -7,6 +7,8 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+    <link rel="icon" type="image/x-icon" href="~/Resources/SGSLogo.png" />
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top navbar-custom">
@@ -22,8 +24,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Default")</li>
-                    <li>@Html.ActionLink("About", "About", "Default")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Default")</li>
+                    <li>@Html.ActionLink("Buy", "Buy", "Default")</li>
+                    <li>@Html.ActionLink("News", "News", "Default")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
