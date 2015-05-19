@@ -208,6 +208,7 @@
     <Content Include="Resources\Grass.png" />
     <Content Include="Resources\Payment.gif" />
     <Content Include="Resources\SGSLogo.png" />
+    <Content Include="Resources\SideImage.jpg" />
     <Content Include="Resources\Stone.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -262,6 +263,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Default\Buy.cshtml" />
     <Content Include="Views\Default\News.cshtml" />
+    <Content Include="Views\Default\ProductInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

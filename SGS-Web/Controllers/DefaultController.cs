@@ -40,5 +40,10 @@ namespace SGS_Web.Controllers
 
             return View();
         }
+
+        public ActionResult ProductInfo()
+        {
+            return View();
+        }
     }
 }
