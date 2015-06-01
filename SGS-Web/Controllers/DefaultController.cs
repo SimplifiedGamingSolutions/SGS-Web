@@ -41,6 +41,14 @@ namespace SGS_Web.Controllers
             return View();
         }
 
+
+        public ActionResult Downloads()
+        {
+            ViewBag.Message = "Downloads";
+
+            return View();
+        }
+
         public ActionResult ProductInfo()
         {
             return View();
