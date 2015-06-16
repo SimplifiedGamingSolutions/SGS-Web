@@ -1,7 +1,17 @@
-﻿body {
+﻿body .minecraft{
     padding-top: 50px;
     padding-bottom: 20px;
     background: url(/Resources/Stone.png);
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-size: cover; 
+    background: url("http://hemstechnosys.com/wp-content/uploads/2015/05/html_background.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 
 /* Set padding to keep content from hitting the edges */
