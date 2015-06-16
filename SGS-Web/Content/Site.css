@@ -1,7 +1,16 @@
-﻿body .minecraft{
+﻿.minecraft{
     padding-top: 50px;
     padding-bottom: 20px;
     background: url(/Resources/Stone.png);
+}
+.ark{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: url("https://digitalvestibule.files.wordpress.com/2015/06/346110_screenshots_2015-06-10_00015.jpg?w=800&h=450") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 body {
     padding-top: 50px;

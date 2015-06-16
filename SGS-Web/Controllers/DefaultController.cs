@@ -13,6 +13,11 @@ namespace SGS_Web.Controllers
             return View();
         }
 
+        public ActionResult Ark()
+        {
+            return View();
+        }
+
         public ActionResult Minecraft()
         {
             return View();
