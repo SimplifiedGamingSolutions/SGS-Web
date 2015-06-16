@@ -59,7 +59,7 @@ namespace SGS_Web.Controllers
             return View();
         }
 
-        public ActionResult ProductInfo()
+        public ActionResult MinecraftProductInfo()
         {
             return View();
         }

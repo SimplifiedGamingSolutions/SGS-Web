@@ -15,7 +15,7 @@
     <AssemblyName>SGS-Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -206,6 +206,7 @@
     <Content Include="Icon.png" />
     <Content Include="Resources\ControlYourMods.png" />
     <Content Include="Resources\Grass.png" />
+    <Content Include="Resources\MCMA_Logs.png" />
     <Content Include="Resources\Payment.gif" />
     <Content Include="Resources\PlayWithYourFriends.png" />
     <Content Include="Resources\SGSLogo.png" />
@@ -264,7 +265,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Default\Buy.cshtml" />
     <Content Include="Views\Default\News.cshtml" />
-    <Content Include="Views\Default\ProductInfo.cshtml" />
+    <Content Include="Views\Default\MinecraftProductInfo.cshtml" />
     <Content Include="Views\Default\Downloads.cshtml" />
     <Content Include="Views\Default\Minecraft.cshtml" />
     <Content Include="Views\Shared\Minecraft_Layout.cshtml" />
@@ -296,7 +297,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51273</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/</IISUrl>
+          <IISUrl>http://localhost:51273/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
