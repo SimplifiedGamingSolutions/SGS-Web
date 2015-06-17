@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Web;
 using System.Web.Mvc;
+using SSQLib;
 
 namespace SGS_Web.Controllers
 {
@@ -62,6 +64,25 @@ namespace SGS_Web.Controllers
         public ActionResult MinecraftProductInfo()
         {
             return View();
+        }
+
+        public string ServerStatus(string address, int port)
+        {
+            /*TcpClient tcpClient = new TcpClient();
+
+            try
+            {
+                tcpClient.Connect(address, port);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }*/
+            SSQL query = new SSQL();
+            ServerInfo serverInformation = query.Server(address, port);
+            string count = serverInformation.PlayerCount;
+            return count;
         }
     }
 }
