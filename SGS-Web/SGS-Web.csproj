@@ -276,6 +276,7 @@
     <Content Include="Views\Shared\Minecraft_Layout.cshtml" />
     <Content Include="Views\Default\Ark.cshtml" />
     <Content Include="Views\Shared\Ark_Layout.cshtml" />
+    <Content Include="Views\Default\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

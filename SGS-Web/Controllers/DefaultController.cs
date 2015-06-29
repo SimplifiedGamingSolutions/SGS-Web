@@ -48,6 +48,13 @@ namespace SGS_Web.Controllers
             return View();
         }
 
+        public ActionResult Error()
+        {
+            ViewBag.Message = "Error";
+
+            return View();
+        }
+
         public ActionResult News()
         {
             ViewBag.Message = "Whats new:";
