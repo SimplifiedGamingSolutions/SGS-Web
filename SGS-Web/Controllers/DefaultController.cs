@@ -5,6 +5,8 @@ using System.Net.Sockets;
 using System.Web;
 using System.Web.Mvc;
 using SSQLib;
+using System.Net;
+using SGS_Web.Minecraft;
 
 namespace SGS_Web.Controllers
 {
@@ -39,7 +41,7 @@ namespace SGS_Web.Controllers
             return View();
         }
 
-        public ActionResult Buy()
+        public ActionResult Products()
         {
             ViewBag.Message = "Start having fun with the click of a button!";
 
@@ -66,23 +68,23 @@ namespace SGS_Web.Controllers
             return View();
         }
 
-        public string ServerStatus(string address, int port)
+        public ServerInfo getSteamServerInfo(string address, int port)
         {
-            /*TcpClient tcpClient = new TcpClient();
-
-            try
-            {
-                tcpClient.Connect(address, port);
-                return true;
-            }
-            catch (Exception)
-            {
-                return false;
-            }*/
             SSQL query = new SSQL();
             ServerInfo serverInformation = query.Server(address, port);
-            string count = serverInformation.PlayerCount;
-            return count;
+            return serverInformation;
+        }
+
+        public Minecraft.MinecraftServerInfo getMinecraftServerInfo(string address, int port)
+        {
+            try
+            {
+                return MinecraftServerInfo.GetServerInformation(new IPEndPoint(Dns.GetHostAddresses(address)[0], port));
+            }
+            catch(Exception e)
+            {
+                return null;
+            }
         }
     }
 }

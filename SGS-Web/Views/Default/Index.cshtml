@@ -1,45 +1,44 @@
 ﻿@{
     ViewBag.Title = "SGS";
-    string mcolor = "red";
-    string acolor = "red";
-    //bool minecraft = ((SGS_Web.Controllers.DefaultController)this.ViewContext.Controller).ServerStatus("SimplifiedGamingSolutions.com", 25565);
-    //if (minecraft)
-    //{
-    //    mcolor = "green";
-    //}
-    //string ark = ((SGS_Web.Controllers.DefaultController)this.ViewContext.Controller).ServerStatus("SimplifiedGamingSolutions.com", 27015);
+    
+    SSQLib.ServerInfo arkInfo = ((SGS_Web.Controllers.DefaultController)this.ViewContext.Controller).getSteamServerInfo("SimplifiedGamingSolutions.com", 27016);
+    SGS_Web.Minecraft.MinecraftServerInfo minecraftInfo = ((SGS_Web.Controllers.DefaultController)this.ViewContext.Controller).getMinecraftServerInfo("SimplifiedGamingSolutions.com", 25565);
 
-    <script type="text/javascript">
-        //alert(@result);
-    </script>
 }
 <div class="row">
     <div class="col-md-4">
         <font color="black">
             <img align="middle" title="" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMH2FPtVQv-JAX4eYS9yjDwJcsqUMXXTtqzHEiTeK3kB5WvL4jBw" style="width:100%;height:100%;border-radius:2%" border="0" />
             <h2><a href="/Ark">Ark: Survival Evolved</a></h2>
-            <p>Address: simplifiedgamingsolutions.com</p>
-            <p>Status: <font color="green"> Online </font></p>
+            @if (@arkInfo == null)
+            {
+                <p><b>Name:</b> "n/a"</p>
+                <p><b>Address:</b> simplifiedgamingsolutions.com</p>
+                <p><b>Status:</b> <font color="red"> Offline </font></p>
+                <p><b>Players:</b> "n/a"</p>
+            }else
+            {
+                <p><b>Name: </b>@arkInfo.Name</p>
+                <p><b>Address: </b> simplifiedgamingsolutions.com</p>
+                <p><b>Status: </b> <font color="green"> Online </font></p>
+                <p><b>Players Online: </b> @arkInfo.PlayerCount/@arkInfo.MaxPlayers</p>
+            }
         </font>
         <font color="black">
             <h2><a href="/Minecraft">Minecraft</a></h2>
-            <p>Address: simplifiedgamingsolutions.com</p>
-            <p>Status: <font color="green"> Online </font></p>
-        </font>
-        <font color="black">
-            <h2>Aion Online</h2>
-            <p>Address: simplifiedgamingsolutions.com</p>
-            <p>Status: <font color="red"> Offline </font></p>
-        </font>
-        <font color="black">
-            <h2>Ragnarok Online</h2>
-            <p>Address: simplifiedgamingsolutions.com</p>
-            <p>Status: <font color="red"> Offline </font></p>
-        </font>
-        <font color="black">
-            <h2>World of Warcraft</h2>
-            <p>Address: simplifiedgamingsolutions.com</p>
-            <p>Status: <font color="red"> Offline </font></p>
+            @if (@minecraftInfo == null)
+            {
+                <p><b>Name:</b> n/a</p>
+                <p><b>Address:</b> simplifiedgamingsolutions.com</p>
+                <p><b>Status:</b> <font color="red"> Offline </font></p>
+                <p><b>Players Online:</b> n/a</p>
+            }
+            else
+            {
+                <p><b>Address: </b> simplifiedgamingsolutions.com</p>
+                <p><b>Status: </b> <font color="green"> Online </font></p>
+                <p><b>Players: </b> @minecraftInfo.CurrentPlayerCount/@minecraftInfo.MaxPlayerCount</p>
+            }
         </font>
     </div>
     <div class="col-md-8">
