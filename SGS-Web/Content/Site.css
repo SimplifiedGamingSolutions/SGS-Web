@@ -19,7 +19,7 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
     background-size: cover; 
-    background: url("http://hemstechnosys.com/wp-content/uploads/2015/05/html_background.jpg") no-repeat center center fixed; 
+    background: url("/Resources/computer-science-course.jpg") no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -44,4 +44,224 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/*Navbar*/
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #0094ff;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #0094ff;
+  background-color: #080808;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #0094ff;
+  background-color: transparent;
+}
+/*Footer*/
+.sgs-footer{
+    border-radius: 0px;
+    margin-bottom: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Minecraft*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.minecraft-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.minecraft-brand:hover,
+.minecraft-brand:focus {
+  text-decoration: none;
+}
+.minecraft-brand > img {
+  display: block;
+}
+@media (min-width: 768px) {
+  .navbar > .container .minecraft-brand,
+  .navbar > .container-fluid .minecraft-brand {
+    margin-left: -15px;
+  }
+}
+
+.navbar-default .minecraft-brand {
+  color: #777;
+}
+.navbar-default .minecraft-brand:hover,
+.navbar-default .minecraft-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+
+.navbar-inverse .minecraft-brand {
+  color: #fff;
+}
+.navbar-inverse .minecraft-brand:hover,
+.navbar-inverse .minecraft-brand:focus {
+  color: #000;
+  background-color: transparent;
+}
+.minecraft-nav {
+  margin: 7.5px -15px;
+}
+.minecraft-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+@media (max-width: 767px) {
+  .minecraft-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .minecraft-nav .open .dropdown-menu > li > a,
+  .minecraft-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  .minecraft-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+  }
+  .minecraft-nav .open .dropdown-menu > li > a:hover,
+  .minecraft-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+}
+@media (min-width: 768px) {
+  .minecraft-nav {
+    float: left;
+    margin: 0;
+  }
+  .minecraft-nav > li {
+    float: left;
+  }
+  .minecraft-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.navbar-default .minecraft-nav > li > a {
+  color: #777;
+}
+.navbar-default .minecraft-nav > li > a:hover,
+.navbar-default .minecraft-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+.navbar-default .minecraft-nav > .active > a,
+.navbar-default .minecraft-nav > .active > a:hover,
+.navbar-default .minecraft-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.navbar-default .minecraft-nav > .disabled > a,
+.navbar-default .minecraft-nav > .disabled > a:hover,
+.navbar-default .minecraft-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+
+.navbar-default .minecraft-nav > .open > a,
+.navbar-default .minecraft-nav > .open > a:hover,
+.navbar-default .minecraft-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-default .minecraft-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-default .minecraft-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .minecraft-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-default .minecraft-nav .open .dropdown-menu > .active > a,
+  .navbar-default .minecraft-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .minecraft-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-default .minecraft-nav .open .dropdown-menu > .disabled > a,
+  .navbar-default .minecraft-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-default .minecraft-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+
+.navbar-inverse .minecraft-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .minecraft-nav > li > a:hover,
+.navbar-inverse .minecraft-nav > li > a:focus {
+  color: #000;
+  background-color: transparent;
+}
+.navbar-inverse .minecraft-nav > .active > a,
+.navbar-inverse .minecraft-nav > .active > a:hover,
+.navbar-inverse .minecraft-nav > .active > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+.navbar-inverse .minecraft-nav > .disabled > a,
+.navbar-inverse .minecraft-nav > .disabled > a:hover,
+.navbar-inverse .minecraft-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+
+.navbar-inverse .minecraft-nav > .open > a,
+.navbar-inverse .minecraft-nav > .open > a:hover,
+.navbar-inverse .minecraft-nav > .open > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+@media (max-width: 767px) {
+  .navbar-inverse .minecraft-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #080808;
+  }
+  .navbar-inverse .minecraft-nav .open .dropdown-menu .divider {
+    background-color: #080808;
+  }
+  .navbar-inverse .minecraft-nav .open .dropdown-menu > li > a {
+    color: #9d9d9d;
+  }
+  .navbar-inverse .minecraft-nav .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .minecraft-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+  }
+  .navbar-inverse .minecraft-nav .open .dropdown-menu > .active > a,
+  .navbar-inverse .minecraft-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-inverse .minecraft-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #080808;
+  }
+  .navbar-inverse .minecraft-nav .open .dropdown-menu > .disabled > a,
+  .navbar-inverse .minecraft-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-inverse .minecraft-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #444;
+    background-color: transparent;
+  }
 }
