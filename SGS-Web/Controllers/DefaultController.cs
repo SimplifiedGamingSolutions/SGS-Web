@@ -78,8 +78,17 @@ namespace SGS_Web.Controllers
         public ServerInfo getSteamServerInfo(string address, int port)
         {
             SSQL query = new SSQL();
-            ServerInfo serverInformation = query.Server(address, port);
-            return serverInformation;
+            try
+            {
+
+                ServerInfo serverInformation = query.Server(address, port);
+                return serverInformation;
+            }
+            catch
+            {
+                //server not found
+                return null;
+            }
         }
 
         public Minecraft.MinecraftServerInfo getMinecraftServerInfo(string address, int port)

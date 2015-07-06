@@ -14,6 +14,12 @@ namespace SGS_Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Clients",
+                url: "Clients/{action}/{id}",
+                defaults: new { controller = "Clients", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{action}/{id}",
                 defaults: new { controller = "Default", action = "Index", id = UrlParameter.Optional }
