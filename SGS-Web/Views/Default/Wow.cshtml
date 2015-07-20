@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Wow";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Wow</h2>
+<?php include('function.php');?>
+<!--DO NOT ALTER MY CODE-->
+<html>
+<head>
+    <title>World of Warcraft</title>
+
+
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <?php if($_GET['do']=="register") { Register();}elseif($_GET['error']) { Error("".$_GET['error']."");}else{ ?>
+        <p>&nbsp;</p>
+        <center>
+            <form style="color:yellow" action='?do=register' method='POST'>
+                <b>Username:</b><br>
+                <div style="margin-left:auto; margin-right:auto;" align="center" id="login">
+                    <input name="user" type="text" value="Username" id="login" onfocus="this.value=''" />
+                </div>
+
+                <br> <b>Password:</b><br>
+                <div style=" margin-left:auto; margin-right:auto;" align="center" id="static-effect2" class="input-wrapper"> <input class="living-input" name="password" type="password" value="Password" onfocus="this.value=''" /> </div>
+
+                <table align="center" style="text-align:center; margin-top:5px;">
+                    <span class="input">
+                        <label for="sales"><b><br>Expansion:</b> </label><br>
+                        <select style="color:ffffff; background-color: #2f2f2f;  -moz-border-radius: 5px; border-radius: 5px;" id="sales" name="flags">
+                            <option value="0">Vanilla</option>
+                            <option value="8">Burning Crusade</option>
+                            <option value="24">Lich King</option>
+                        </select>
+                    </span>
+                    <br />
+                    <br />
+                    <input class="cpBtn" type="submit" value="Create Account" id="button"></td></tr>
+                </table>
+                <p align="center" style="color:yellow; type=" text">set realmlist 127.0.0.1</p>
+            </form>
+        </center>
+
+    </div>
+
+    <?php }?>
+</body>
+</html>
+

@@ -27,6 +27,11 @@ namespace SGS_Web.Controllers
             return View();
         }
 
+        public ActionResult Wow()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Simplified Gaming Solutions started in Utah by a few gamers who wanted to share their love for gaming with the world.";
